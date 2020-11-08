@@ -2,7 +2,8 @@ import logging
 from aiogram import Bot, types, executor
 from aiogram.dispatcher import Dispatcher
 from os import getenv
-from sys import exit
+from pathlib import Path
+
 
 logging.basicConfig(level=logging.INFO)
 
@@ -15,7 +16,12 @@ dp = Dispatcher(bot)
 
 max_chars = 20      # How many chars to show in inline preview before cutting it with "..."
 cache_time = 86400  # 1 day
-faces = [line[:-1] for line in open("faces.txt", "rt", encoding="utf-8").readlines()]  # Loading text faces
+faces_path = Path.joinpath(Path(__file__).parent, "data", "faces.txt")
+
+if not faces_path.exists():
+    exit("Error: file data/faces.txt not found!")
+# Loading text faces
+faces = [line[:-1] for line in open(faces_path, "rt", encoding="utf-8").readlines()]
 
 
 def shorten(text):
