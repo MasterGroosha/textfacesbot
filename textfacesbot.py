@@ -1,5 +1,3 @@
-#!venv/bin/python
-
 import logging
 from aiogram import Bot, types, executor
 from aiogram.dispatcher import Dispatcher
