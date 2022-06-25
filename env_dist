@@ -1,0 +1,28 @@
+# Note: you can comment out or remove any settings marked as [optional].Bot
+# Rename this file to .env and fill with your settings.
+
+# Bot's token. Obtain from https://t.me/BotFather
+BOT_TOKEN=1234567890:AaBbCcDdEeFGgHhIiJjKkLlMmNnOoPpQq
+
+# [optional] Whether to skip pending updates or not
+# DROP_PENDING_UPDATES=True
+
+# [optional] absolute path to custom file with your kaomoji
+# with Docker deploy this would be the path from the mounted volume
+# CUSTOM_FACES_PATH=/opt/textfacesbot/faces.txt
+
+# [optional] Host part for webhooks
+# if commented, polling will be used instead
+# WEBHOOK_DOMAIN=textfacesbot.example.com
+
+# [optional] Path to webhook
+# WEBHOOK_PATH=/path/from/root
+
+# [optional] if using webhooks, main interface's IP address
+# APP_HOST=0.0.0.0
+
+# [optional] if using webhooks, port to listen
+# APP_PORT=9000
+
+# [optional] Uncomment to use Local Bot API server instead of the official one
+# CUSTOM_BOT_API=http://127.0.0.1:8081
