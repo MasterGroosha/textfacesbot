@@ -1,0 +1,16 @@
+# Rename to textfacesbot.service (or whatever you want)
+
+[Unit]
+Description=Telegram Text Faces Bot
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/user/telegram-textfacesbot
+ExecStart=/home/user/telegram-textfacesbot/venv/bin/python -m bot
+KillMode=process
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

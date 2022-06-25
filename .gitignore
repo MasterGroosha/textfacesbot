@@ -3,3 +3,4 @@ venv/
 .vscode
 .env
 /docker-compose.yml
+/textfacesbot.service
