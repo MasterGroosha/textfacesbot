@@ -14,7 +14,7 @@ from bot.handlers import setup_routers
 async def main():
     # Setup logging
     logging.basicConfig(
-        level=logging.INFO,
+        level=logging.ERROR,
         format="%(asctime)s - %(levelname)s - %(name)s - %(message)s",
     )
 
