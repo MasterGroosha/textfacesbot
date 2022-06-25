@@ -2,9 +2,7 @@ version: "3.8"
 services:
     bot:
         image: textfacesbot:latest
-        container_name: "textfacesbot"
         volumes:
           - './data:/app/data'
-        environment:
-          - BOT_TOKEN=123456:AaBbCcDdEeFfGg
+        env_file: .env
         restart: unless-stopped
