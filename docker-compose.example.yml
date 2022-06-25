@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+    bot:
+        image: groosha/textfacesbot:latest
+        # if you want custom emoji, use volumes
+        # and don't forget to update your .env file!
+#        volumes:
+#          - './data:/opt/custom_faces.txt'
+        env_file: .env
+        restart: unless-stopped
+        stop_signal: SIGINT
