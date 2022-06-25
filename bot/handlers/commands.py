@@ -1,5 +1,5 @@
 from aiogram import Router, F, html
-from aiogram.dispatcher.filters import Command, CommandStart
+from aiogram.dispatcher.filters import Command
 from aiogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 router = Router()
